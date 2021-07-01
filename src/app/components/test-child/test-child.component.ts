@@ -12,7 +12,8 @@ import {
   styleUrls: ['./test-child.component.scss'],
 })
 export class TestChildComponent {
-  @Input() testInput: string | null = null;
+  // @Input() testInput: string | null = null;
+  @Input() testInput: string = '';
 
   @Input() set anotherInput(value: boolean) {
     console.log('===> @Input() disabled: ', value);

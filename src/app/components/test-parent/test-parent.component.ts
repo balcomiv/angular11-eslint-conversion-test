@@ -16,5 +16,7 @@ export class TestParentComponent {
 
   disabled = true;
 
-  constructor() {}
+  constructor() {
+    this.disabled = undefined;
+  }
 }
