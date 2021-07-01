@@ -26,6 +26,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+# Helpful Commands
+
+## Formatting Lint Output
+
+- ng lint --format json > issues.json
+
 # Helpful Links
 
 - https://blog.briebug.com/blog/convert-angular-project-tslint-eslint
+
+- https://duncanleung.com/why-slow-plugin-typescript-eslint-performance-issues/
+
+- https://indepth.dev/posts/1282/setting-up-efficient-workflows-with-eslint-prettier-and-typescript
+
+- https://jameshenry.blog/how-to-use-angular-eslint-in-a-new-project/
+
+- https://github.com/angular-eslint/angular-eslint/blob/master/packages/eslint-plugin-template/src/configs/README.md
