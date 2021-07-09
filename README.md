@@ -26,4 +26,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# Test Commit
+## Helpful Links
+
+- https://dev.to/gsarciotto/migrating-and-configuring-eslint-with-angular-11-3fg1
+
+- https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/
+
+- https://developer.okta.com/blog/2019/12/09/angular-webpack
+- https://stackoverflow.com/questions/59683584/how-to-prevent-webpack-to-fail-build-on-eslint-error
