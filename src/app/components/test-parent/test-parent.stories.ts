@@ -1,5 +1,6 @@
 import { moduleMetadata } from '@storybook/angular';
 import { Meta, Story } from '@storybook/angular/types-6-0';
+import { TestChildComponent } from '../test-child/test-child.component';
 import { TestParentComponent } from './test-parent.component';
 
 // 👇 The default export metadata controls how Storybook lists your stories and provides information used by addons.
@@ -8,7 +9,7 @@ export default {
   component: TestParentComponent,
   decorators: [
     moduleMetadata({
-      declarations: [TestParentComponent],
+      declarations: [TestParentComponent, TestChildComponent],
       imports: [],
     }),
   ],

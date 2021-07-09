@@ -43,3 +43,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - https://jameshenry.blog/how-to-use-angular-eslint-in-a-new-project/
 
 - https://github.com/angular-eslint/angular-eslint/blob/master/packages/eslint-plugin-template/src/configs/README.md
+
+## Karma JSON Reporter
+
+- https://www.npmjs.com/package/karma-structured-json-reporter

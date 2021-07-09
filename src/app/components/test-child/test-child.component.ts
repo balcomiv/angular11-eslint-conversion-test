@@ -12,18 +12,23 @@ import {
   styleUrls: ['./test-child.component.scss'],
 })
 export class TestChildComponent {
-  // @Input() testInput: string | null = null;
-  @Input() testInput: string = '';
-
-  @Input() set anotherInput(value: boolean) {
-    console.log('===> @Input() disabled: ', value);
+  @Input() set asyncTestValue(value: boolean | null) {
+    if (value === null) {
+      this.cachedAsyncTestValues.push('null');
+    } else {
+      this.cachedAsyncTestValues.push(value);
+    }
   }
 
-  testValue?: string;
-
-  testIf?: boolean;
-
-  constructor() {
-    console.log('ctor');
+  @Input() set syncTestValue(value: boolean) {
+    if (value === null) {
+      this.cachedSyncTestValues.push('null');
+    } else {
+      this.cachedSyncTestValues.push(value);
+    }
   }
+
+  cachedAsyncTestValues: (boolean | string)[] = [];
+
+  cachedSyncTestValues: (boolean | string)[] = [];
 }

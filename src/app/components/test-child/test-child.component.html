@@ -1,5 +1,6 @@
-<p>test-child works!</p>
+<label>Async Test Values: </label>
+<div *ngFor="let value of cachedAsyncTestValues">{{ value }}</div>
 
-<p>String or undefined into date pipe {{ testValue | date: "MM/dd/yyyy" }}</p>
-
-<ng-container *ngIf="testIf"> Yep </ng-container>
+<br />
+<label>Sync Test Value: </label>
+<div *ngFor="let value of cachedSyncTestValues">{{ value }}</div>

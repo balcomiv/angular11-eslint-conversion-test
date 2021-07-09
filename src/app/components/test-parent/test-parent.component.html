@@ -1,5 +1,5 @@
 <!-- Note: "" doesn't even cause the input to fire -->
 <app-test-child
-  *ngIf="test$ | async"
-  [testInput]="test$ | async"
+  [asyncTestValue]="asyncTestValue | async"
+  [syncTestValue]="(syncTestValue | async)!"
 ></app-test-child>
