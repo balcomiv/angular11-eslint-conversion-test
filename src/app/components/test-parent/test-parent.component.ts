@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { BehaviorSubject, of, Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-test-parent',
@@ -17,8 +17,6 @@ export class TestParentComponent {
   syncTestValue = new BehaviorSubject(true);
 
   constructor() {
-    //  this.disabled = undefined;
-
     //  Testing async pipe
     setTimeout(() => {
       this.asyncTestValue.next(true);
